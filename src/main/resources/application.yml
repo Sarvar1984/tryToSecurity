@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/securdb
+    username: postgres
+    password: St@rt123
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+  jwt:
+    public:
+      key:classpath:app.pub
+    private:
+      key:classpath:app.pri
+    expiration:
+      time:36_000_000
